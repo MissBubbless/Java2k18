@@ -1,0 +1,21 @@
+package com.nym.thread1;
+
+public class ProcessPayment extends Customer{
+	
+	Customer customer;
+	public ProcessPayment(customer) {
+		this.customer = customer;
+	}
+	public ProcessPayment() {
+		super();
+	}
+	public void withdrawal(double amount) {
+		balance=balance-amount;
+		System.out.println(this.name+" Balance is :"  + balance);
+	}
+	public void deposit(double amount) {
+		super.balance=super.balance+amount;
+//	    System.out.println(name+" Balance is :"  + balance);
+
+	}
+}

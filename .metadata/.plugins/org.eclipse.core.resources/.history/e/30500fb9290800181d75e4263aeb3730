@@ -1,0 +1,11 @@
+package com.nym.CarDealer;
+
+public class CarHistoryDAO {
+
+	CarHistoryDAO(){
+	JdbcConnection j=new JdbcConnection();
+	j.createdatabase();
+	String query = "SELECT * FROM CARHISTORY;";
+	j.rs=j.stmt.executeQuery(query);
+	}
+}

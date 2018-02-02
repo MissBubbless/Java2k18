@@ -1,0 +1,18 @@
+package com.nym.thread1;
+
+public class ExecuteTransaction extends Thread
+{
+	
+	
+	public void setCustomer(Customer cust)
+	{
+		Thread t=new ExecuteTransaction();
+		t.start();
+	}
+	public void run() {
+		ProcessPayment p=new ProcessPayment();
+		p.deposit(100);
+		
+	}
+}
+

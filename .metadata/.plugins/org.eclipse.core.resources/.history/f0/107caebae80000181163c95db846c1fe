@@ -1,0 +1,16 @@
+package com.nym.thread1;
+
+public class Customer {
+	
+	 String name;
+	 double balance=10000;
+	 String operation;
+	 public Customer() {}
+	 public Customer(String name,double balance, String operation){
+		 this.name=name;
+		 this.balance=balance;
+		 this.operation=operation;
+	 }
+	 
+	 
+}

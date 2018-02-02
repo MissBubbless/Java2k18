@@ -1,0 +1,13 @@
+package com.nym.Practice;
+
+public class RunnableClass implements Runnable{
+
+	public void run()
+	{
+		print();
+	}
+	
+	synchronized public void print() {
+		System.out.println(Thread.currentThread().getName());
+	}
+}

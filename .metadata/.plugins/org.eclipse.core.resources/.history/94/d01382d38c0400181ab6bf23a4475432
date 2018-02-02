@@ -1,0 +1,11 @@
+package com.nym.Practice;
+
+public class CustomerDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Customer c1=new Customer("Nymisha","Reddy");
+		System.out.println(c1.fname);
+	}
+
+}

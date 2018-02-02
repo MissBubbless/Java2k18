@@ -1,0 +1,9 @@
+package com.nym.CarDealer;
+
+public class CarHistoryDAO {
+
+	CarHistoryDAO(){
+	JdbcConnection j=new JdbcConnection();
+	j.createdatabase();
+	}
+}

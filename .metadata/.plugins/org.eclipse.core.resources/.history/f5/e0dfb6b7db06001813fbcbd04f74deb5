@@ -1,0 +1,25 @@
+package main;
+
+import java.time.Month;
+import java.time.Period;
+import java.time.YearMonth;
+import java.time.temporal.ChronoUnit;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Locale;
+import java.io.*;
+
+public class A 
+{
+	public static void main(String[] args) 
+	{	
+		String report=args[0];
+		if(report.equals(Report.EMPRPT.getName()))
+			System.out.println("Id: "+Report.EMPRPT.getId()+"Name: "+Report.EMPRPT.getName());
+		if(report.equals(Report.EMPRPT))
+			System.out.println("Id: "+Report.EMPRPT.getId()+"Name: "+Report.EMPRPT.getName());
+		if(report.equals(Report.EMPRPT.toString()))
+			System.out.println("Id: "+Report.EMPRPT.getId()+"Name: "+Report.EMPRPT.getName());
+		
+	}
+}

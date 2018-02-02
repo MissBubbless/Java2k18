@@ -1,0 +1,17 @@
+package com.nym.thread1;
+
+public class ExecuteTransaction extends Thread
+{
+	@SuppressWarnings("unused")
+	private Customer customer;
+	public ExecuteTransaction(Customer cust)
+	{
+		this.customer = cust;
+	}
+	public void run() {
+		ProcessPayment p= ProcessPayment(customer);
+		p.deposit(100);
+		
+	}
+}
+

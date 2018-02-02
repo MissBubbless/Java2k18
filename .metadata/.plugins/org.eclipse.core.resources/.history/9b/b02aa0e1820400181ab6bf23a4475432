@@ -1,0 +1,5 @@
+package com.nym.Practice;
+
+public class RunnableClass extends Thread {
+
+}

@@ -1,0 +1,23 @@
+package com.nym.thread1;
+
+import java.util.ArrayList;
+
+public class ThreadDemo extends Thread{
+
+	public static void main(String[] args) {
+		
+		ArrayList<Customer> list=new ArrayList<Customer>();
+		for(int i=0;i<100;i++) {
+			list.add(new Customer("Customer"+i,10000,"deposit"));
+		}
+		for(Customer c:list) {
+			System.out.println(c.name);
+		}
+		for(Customer c:list) {
+			
+			Thread t=new ExecuteTransaction();
+			t.start();
+			
+	}
+
+	}}

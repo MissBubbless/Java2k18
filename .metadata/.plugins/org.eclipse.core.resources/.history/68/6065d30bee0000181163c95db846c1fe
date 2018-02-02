@@ -1,0 +1,24 @@
+package com.nym.thread1;
+
+public class ProcessPayment{
+	
+	private Customer customer;
+//	public ProcessPayment(String name,double amount, String operation) {
+//		super(name,amount,operation);
+//	}
+	public ProcessPayment(Customer cust) {
+		this.customer = cust;
+	}
+	
+	public void withdrawal(double amount) {
+//		System.out.println(customer.balance);
+		customer.balance=customer.balance-amount;
+		System.out.println(customer.name+" Balance is :"  + customer.balance);
+	}
+	synchronized public void deposit(double amount) {
+//		System.out.println(customer.balance);
+		customer.balance=customer.balance+amount;
+	    System.out.println(customer.name+" Balance is :"  + customer.balance);
+
+	}
+}

@@ -1,0 +1,25 @@
+package com.nym.Practice;
+
+import java.util.BitSet;
+
+public class BitSetDemo {
+
+	public static void main(String args[])
+	{
+		BitSet b=new BitSet();
+		BitSet b2=new BitSet();
+		
+		b.set(1);
+		b.set(3);
+		b2.set(33);
+		b.set(12);
+		
+		b2.set(3);
+		b2.set(98);
+		b.set(33);
+		
+		b.andNot(b2);
+		System.out.println(b);
+		System.out.println(b2);
+	}
+}

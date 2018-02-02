@@ -1,0 +1,19 @@
+package TestCase.com.nym.testcase;
+
+import junit.framework.TestCase;
+
+public class CalculatorTest extends TestCase {
+
+	public void testMain() {
+		//fail();
+	}
+
+	public void testAdd() {
+		
+		assertTrue(Calculator.add(2,3)==5);
+	}
+
+	
+	
+
+}
